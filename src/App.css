@@ -17,9 +17,12 @@
 .draw-card:hover{
     cursor: pointer;
 }
+.draw-card:disabled{
+    cursor: not-allowed;
+}
 
 .card-grid{
     display: grid;
     grid-gap: 1rem;
-    /* grid-template-columns: minmax(5, 1fr); */
+    grid-template-columns: auto auto auto auto auto;
 }
