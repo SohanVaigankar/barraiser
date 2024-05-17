@@ -4,11 +4,12 @@ import { Card } from "./components";
 import { mockCards } from "./utils/staticData";
 
 function App() {
-  const [cards, setCards] = useState(mockCards);
+  const [deck, setDeck] = useState(mockCards);
   const [selectedCards, setSelectedCards] = useState([]);
 
   const handleClick = () => {
-    console.log("cards.length", cards.length);
+
+    let cards = deck;
 
     if (cards.length === 0 || selectedCards.length === 52) {
       return;
